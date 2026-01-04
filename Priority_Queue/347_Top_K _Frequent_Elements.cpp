@@ -7,6 +7,7 @@ public:
        for(auto ele : nums){
         mp[ele]++;
        }
+       
        priority_queue<pair<int,int>,vector<pair<int,int>>,greater<pair<int,int>>>pq;
        for(auto [key,value] : mp){
         pq.push({value,key});
